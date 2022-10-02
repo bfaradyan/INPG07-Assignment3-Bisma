@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 3 Bisma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.1.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg shadow bg-light p-3 mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://getbootstrap.com/" target="_blank"><img id="bootstrapLogo" src="./images/bootstrap-logo.png" alt="Bootstrap Logo">CSS framework by Bootstrap 5</a>
+        </div>
+    </nav> 
+    <!-- Main Container-->
+    <div class="container-xxl shadow-lg p-3 mb-5 bg-light rounded">
+        <!--Title-->
+        <div class="row" id="contentTitle">
+            <div class="col-md-12">
+                <h2 class="text-center">Covid-19 Tracker ( <b id="textCountries"></b> )</h2>
+            </div>
+        </div>
+        <!--Search-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex mx-auto" id="searchSection">
+                    <select class="form-control me-2" name="searchCountries" id="searchCountries" onchange="ChangeCountries()">
+                        <!-- <option value="Indonesia">Cari</option> -->
+                    </select>
+                    <!-- <button class="btn btn-outline-success" id="search">Search</button> -->
+                </div>
+            </div>
+        </div>
+        <!--Content Card-->
+        <div class="card-group" id="classContainer">
+            <div class="row row-cols-3 g-3">
+                <!--Active Cases-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./images/active-cases.jpg" class="card-img-top" alt="Corona Virus">
+                        <div class="card-body">
+                            <h3 class="card-title">Active Cases</h3>
+                            <h4 class="card-subtitle mb-2 text-muted" id="dataActive">0</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--New Cases-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./images/coronavirus-stats.jpg" class="card-img-top" alt="Covid-19 Statistic">
+                        <div class="card-body">
+                            <h3 class="card-title">New Cases</h3>
+                            <h4 class="card-subtitle mb-2 text-muted" id="dataNew">0</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--Recovered-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./images/recovery.jpg" class="card-img-top" alt="Recovered">
+                        <div class="card-body">
+                            <h3 class="card-title">Recovered</h3>
+                            <h4 class="card-subtitle mb-2 text-muted" id="dataRecovered">0</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--Total Cases-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./images/people.jpeg" class="card-img-top" alt="People Wearing Masks">
+                        <div class="card-body">
+                            <h3 class="card-title">Total Cases</h3>
+                            <h4 class="card-subtitle mb-2 text-muted" id="totalCase">0</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--Total Deaths-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./images/covid-deaths.jpg" class="card-img-top" alt="Covid-19 Victim">
+                        <div class="card-body">
+                            <h3 class="card-title">Total Deaths</h3>
+                            <h4 class="card-subtitle mb-2 text-muted" id="totalDeath">0</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--Total Tests-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./images/covid-swab-test.jpg" class="card-img-top" alt="Covid-19 Swab Test">
+                        <div class="card-body">
+                            <h3 class="card-title">Total Tests</h3>
+                            <h4 class="card-subtitle mb-2 text-muted" id="totalTest">0</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="container-fluid shadow-lg bg-light">
+        <div class="row">
+            <div class="col-md-10 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2022 Not All Rights Reserved by Bisma</p>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                    <li><a class="instagram" href="https://www.instagram.com/bsmaurent/" target="_blank">Instagram</a></li>
+                    <li><a class="facebook" href="https://www.facebook.com/bismaka.faradyan/" target="_blank">Facebook</a></li>
+                    <li><a class="linkedin" href="www.linkedin.com/in/bismaka-faradyan-3445ab185" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="countries"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

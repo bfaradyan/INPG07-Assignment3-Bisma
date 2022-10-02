@@ -1,0 +1,62 @@
+nav {
+    padding: 5px;
+}
+
+body {
+    background-image: url("./images/background.jpg")
+}
+
+#bootstrapLogo {
+    width: 5.5rem;
+    height: 5.5rem;
+    transition: all 0.2s ease;
+}
+
+#bootstrapLogo:hover {
+    transform: scale(1.2);
+}
+
+#contentTitle {
+    margin-bottom: 30px;
+}
+
+#searchSection {
+    width: 40%;
+}
+
+#classContainer {
+    margin-top: 20px;
+    justify-items: auto;
+}
+
+.card {
+    margin: auto;
+    float: none;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.05);
+}
+
+img {
+    height: 14rem;
+}
+
+.social-icons {
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+}
+
+li {
+    margin: 10px;
+    list-style: none;
+}
+
+.copyright-text {
+    margin: 10px;
+}
